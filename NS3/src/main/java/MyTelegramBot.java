@@ -7,11 +7,11 @@ import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 
 import java.io.IOException;
 public class MyTelegramBot extends TelegramLongPollingBot{
-    public static final String BOT_TOKEN = "КЛЮЧ ВАШЕГО БОТА";
+    public static final String BOT_TOKEN = "6297133948:AAGncVjZNxEJneU8wxgO6zsgp66KJSn5C6s";
 
-    public static final String BOT_USERNAME = "ИМЯ ВАШЕГО БОТА";
+    public static final String BOT_USERNAME = "CosmoPictureBot";
 
-    public static final String URI = "https://api.nasa.gov/planetary/apod?api_key=ВАШ КЛЮЧ";
+    public static final String URI = "https://api.nasa.gov/planetary/apod?api_key=Zj7AsdiOzIGcbmLnpnw2LR3hHKQtPqn3HxTIrCHH";
 
     public static long chat_id;
 
@@ -36,8 +36,8 @@ public class MyTelegramBot extends TelegramLongPollingBot{
             chat_id = update.getMessage().getChatId();
             switch (update.getMessage().getText()) {
                 case "/help":
-                    sendMessage("Привет, я бот NASA! Я высылаю ссылки на картинки по запросу. " +
-                            "Напоминаю, что картинки на сайте NASA обновляются раз в сутки");
+                    sendMessage("Hello, I'm a NASA bot! I send links to pictures upon request. " +
+                            "Let me remind you that pictures on the NASA website are updated once a day.");
                     break;
                 case "/give":
                     try {
